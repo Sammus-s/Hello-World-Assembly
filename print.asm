@@ -7,7 +7,7 @@ message db 'Hello World!', '$';Define mensagem
 .CODE ;início da seção de código
 main proc;define o inicio do procedimento principal;
 
-mov ax, @data;Move o valor em AX para o registrador
+mov ax, @data;Carrega o endereço do segmento Data
 mov ds, ax ;move o valor em ax para os registradores DS
 
 mov ah, 9h; prepara os registradores AH para a função 09h do DOS
